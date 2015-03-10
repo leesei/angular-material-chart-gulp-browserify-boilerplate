@@ -17,11 +17,12 @@ A boilerplate using Angular Material, SASS, Gulp, and Browserify that also utili
 > ## Rationale for change
 > 
 > [jakemmarsh/angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate) is an excellent boilerplate to start with, but I encountered difficulties when trying to add more client dependencies.
+>
 > 1. library not present in NPM
 > 2. library present in NPM is not browserify-friendly
 > 3. no way to bundle dependencies with CSS
 > 
-> So I switched to use Bower libraries and `debowerify` to assist the `require()`. Note that all client `require()`s will be in global scope so the `var angular = require('angular');` is to be [changed to](http://stackoverflow.com/questions/26216887/empty-object-require-angular-browserify) `require('angular');` (or deleted).
+> So I switched to use Bower libraries and `debowerify` to assist the `require()`. Note that all client `require()`s will be in global scope so the `var angular = require('angular');` is to be [changed to](http://stackoverflow.com/questions/26216887/empty-object-require-angular-browserify) `require('angular');` (or deleted).  
 > To solve issue 3, I added [`gulp-cssimport`](https://github.com/unlight/gulp-cssimport) to `@import` 3rd party CSS.
 
 ---
