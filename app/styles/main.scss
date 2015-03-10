@@ -1,0 +1,13 @@
+@import 'vars';
+@import 'typography';
+
+@import '../../bower_components/angular-material/angular-material.css';
+@import '../../bower_components/angular-chart.js/dist/angular-chart.css';
+@import '../../bower_components/nvd3/nv.d3.css';
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: $font-color--dark;
+  background-color: $background--light;
+  padding: $half-space;
+}

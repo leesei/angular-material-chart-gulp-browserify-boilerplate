@@ -1,0 +1,20 @@
+<!-- https://github.com/angular-ui/ui-router -->
+
+<md-sidenav class="flex md-sidenav-left md-whiteframe-z2" md-component-id="menu" md-is-locked-open="$mdMedia('gt-md')">
+	<md-toolbar class="md-theme-indigo">
+		<h1 class="md-toolbar-tools">Sidenav Left</h1>
+	</md-toolbar>
+	<md-content class="md-padding">
+		<md-button ng-click="menu.close()" class="md-primary" hide-gt-md>
+		Close Sidenav Left
+		</md-button>
+		<p hide-md show-gt-md>
+			This sidenav is locked open on your device. To go back to the default behavior,
+			narrow your display.
+		</p>
+		<ul>
+			<li><a ui-sref="home">Home</a></li>
+			<li><a ui-sref="charts">Charts</a></li>
+		</ul>
+	</md-content>
+</md-sidenav>

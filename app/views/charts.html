@@ -1,0 +1,30 @@
+<!--
+	http://jtblin.github.io/angular-chart.js/
+	http://www.chartjs.org/docs/
+-->
+
+<!--
+	https://github.com/angularjs-nvd3-directives/angularjs-nvd3-directives
+	http://nvd3.org/examples/index.html
+-->
+
+<h1 class="heading -large">Charts</h1>
+
+<a href="https://github.com/angularjs-nvd3-directives/angularjs-nvd3-directives">angularjs-nvd3-directives</a>
+<a href="http://nvd3.org/examples/index.htmls">nvd3</a>
+<nvd3-line-chart
+    data="ctrl.exampleData"
+    showXAxis="true"
+    showYAxis="true"
+    tooltips="true"
+    useInteractiveGuideLine="true"
+    showLegend="true"
+    legendColor="ctrl.legendColorFunction()">
+</nvd3-line-chart>
+
+<a href="http://jtblin.github.io/angular-chart.js/">angular-chart.js</a>
+<a href="http://www.chartjs.org/docs/">Chart.js</a>
+<canvas id="line" class="chart chart-line" data="ctrl.data"
+  labels="ctrl.labels" legend="true" series="ctrl.series"
+  click="ctrl.onClick">
+</canvas>

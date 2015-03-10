@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title ng-bind="pageTitle"></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div layout="row">
+    <md-sidenav flex class="md-sidenav-left md-whiteframe-z2" md-component-id="menu" md-is-locked-open="$mdMedia('gt-md')">
+      <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Sidenav Left</h1>
+      </md-toolbar>
+      <md-content layout="column" class="md-padding" ng-controller="MenuCtrl as ctrl">
+
+        <p hide-md show-gt-md>
+          This sidenav is locked open on your device. To go back to the default behavior,
+          narrow your display.
+        </p>
+        <section layout="column" layout-align="center center">
+          <md-button ui-sref="home">Home</md-button>
+          <md-button ui-sref="charts">Charts</md-button>
+        </section>
+      </md-content>
+    </md-sidenav>
+
+    <div flex layout="column">
+      <md-toolbar class="md-theme-indigo" hide-gt-md>
+        <div class="md-toolbar-tools" ng-controller="MenuCtrl as ctrl">
+          <md-button ng-click="ctrl.open()">☰</md-button>
+          {{pageTitle}}
+        </div>
+      </md-toolbar>
+      <md-content flex class="md-padding md-whiteframe-z1" ui-view></md-content>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
