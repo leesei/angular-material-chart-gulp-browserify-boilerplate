@@ -1,6 +1,8 @@
 angular-material-chart-gulp-browserify-boilerplate
 ==================================================
 
+> [DEPRECATED] I ditched Angular and bower for frontend development (moved to React and Browserify)
+
 A boilerplate using Angular Material, SASS, Gulp, and Browserify that also utilizes [these best AngularJS practices](https://github.com/toddmotto/angularjs-styleguide) and Gulp best practices from [this resource](https://github.com/greypants/gulp-starter).
 
 ---
